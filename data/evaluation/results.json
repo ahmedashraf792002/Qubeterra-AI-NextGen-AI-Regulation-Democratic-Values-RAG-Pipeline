@@ -1,0 +1,225 @@
+{
+  "top_k": 5,
+  "summary": {
+    "mean_precision_at_k": 0.39999999999999997,
+    "mean_recall_at_k": 1.0,
+    "mean_reciprocal_rank": 0.7083333333333333,
+    "queries_with_ground_truth": 4,
+    "queries_total": 5
+  },
+  "queries": [
+    {
+      "id": "q1",
+      "query": "What activities are classified in Annex III as high-risk AI use cases?",
+      "relevant_document_ids": [
+        "document_05"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_05_chunk034",
+          "document_id": "document_05",
+          "similarity": 0.8449162840843201,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_05_chunk033",
+          "document_id": "document_05",
+          "similarity": 0.8348019123077393,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_05_chunk032",
+          "document_id": "document_05",
+          "similarity": 0.822126567363739,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_05_chunk020",
+          "document_id": "document_05",
+          "similarity": 0.7873032689094543,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_05_chunk013",
+          "document_id": "document_05",
+          "similarity": 0.7581527233123779,
+          "is_relevant": true
+        }
+      ],
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "q2",
+      "query": "What are the transparency obligations for providers of high-risk AI systems?",
+      "relevant_document_ids": [],
+      "retrieved": [
+        {
+          "chunk_id": "document_60_chunk011",
+          "document_id": "document_60",
+          "similarity": 0.859130859375,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_05_chunk039",
+          "document_id": "document_05",
+          "similarity": 0.855599045753479,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_01_chunk019",
+          "document_id": "document_01",
+          "similarity": 0.854873538017273,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_05_chunk040",
+          "document_id": "document_05",
+          "similarity": 0.8532243371009827,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_05_chunk076",
+          "document_id": "document_05",
+          "similarity": 0.8383266925811768,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.0,
+      "recall_at_k": null,
+      "reciprocal_rank": 0.0,
+      "ground_truth_missing": true
+    },
+    {
+      "id": "q3",
+      "query": "Which AI practices does the AI Act prohibit as posing unacceptable risk?",
+      "relevant_document_ids": [
+        "document_13"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_01_chunk006",
+          "document_id": "document_01",
+          "similarity": 0.8657090067863464,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_14_chunk005",
+          "document_id": "document_14",
+          "similarity": 0.795654833316803,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_13_chunk005",
+          "document_id": "document_13",
+          "similarity": 0.795654833316803,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_01_chunk010",
+          "document_id": "document_01",
+          "similarity": 0.791049063205719,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_27_chunk002",
+          "document_id": "document_27",
+          "similarity": 0.787529706954956,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "q4",
+      "query": "How does US civil rights law intersect with algorithmic discrimination?",
+      "relevant_document_ids": [
+        "document_14"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_14_chunk039",
+          "document_id": "document_14",
+          "similarity": 0.7252987623214722,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_13_chunk039",
+          "document_id": "document_13",
+          "similarity": 0.7252987623214722,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_05_chunk048",
+          "document_id": "document_05",
+          "similarity": 0.724226713180542,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_15_chunk037",
+          "document_id": "document_15",
+          "similarity": 0.7107797861099243,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_55_chunk006",
+          "document_id": "document_55",
+          "similarity": 0.6867054104804993,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "q5",
+      "query": "When did the AI Act's provisions on prohibited AI practices enter into force?",
+      "relevant_document_ids": [
+        "document_60"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_01_chunk033",
+          "document_id": "document_01",
+          "similarity": 0.8309394121170044,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_60_chunk000",
+          "document_id": "document_60",
+          "similarity": 0.80584716796875,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_13_chunk003",
+          "document_id": "document_13",
+          "similarity": 0.798146665096283,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_14_chunk003",
+          "document_id": "document_14",
+          "similarity": 0.798146665096283,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_05_chunk082",
+          "document_id": "document_05",
+          "similarity": 0.7808045148849487,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.5,
+      "ground_truth_missing": false
+    }
+  ]
+}
