@@ -1,132 +1,225 @@
 {
   "top_k": 5,
   "summary": {
-    "mean_precision_at_k": 0.39999999999999997,
-    "mean_recall_at_k": 1.0,
-    "mean_reciprocal_rank": 0.7083333333333333,
-    "queries_with_ground_truth": 4,
-    "queries_total": 5
+    "mean_precision_at_k": 0.3333333333333334,
+    "mean_recall_at_k": 0.7777777777777778,
+    "mean_reciprocal_rank": 0.6333333333333333,
+    "queries_with_ground_truth": 15,
+    "queries_total": 15
   },
   "queries": [
     {
-      "id": "q1",
-      "query": "What activities are classified in Annex III as high-risk AI use cases?",
+      "id": "Q1",
+      "query": "What are the transparency obligations for high-risk AI systems?",
       "relevant_document_ids": [
-        "document_05"
+        "document_01",
+        "document_05",
+        "document_37"
       ],
       "retrieved": [
-        {
-          "chunk_id": "document_05_chunk034",
-          "document_id": "document_05",
-          "similarity": 0.8449162840843201,
-          "is_relevant": true
-        },
-        {
-          "chunk_id": "document_05_chunk033",
-          "document_id": "document_05",
-          "similarity": 0.8348019123077393,
-          "is_relevant": true
-        },
-        {
-          "chunk_id": "document_05_chunk032",
-          "document_id": "document_05",
-          "similarity": 0.822126567363739,
-          "is_relevant": true
-        },
-        {
-          "chunk_id": "document_05_chunk020",
-          "document_id": "document_05",
-          "similarity": 0.7873032689094543,
-          "is_relevant": true
-        },
-        {
-          "chunk_id": "document_05_chunk013",
-          "document_id": "document_05",
-          "similarity": 0.7581527233123779,
-          "is_relevant": true
-        }
-      ],
-      "precision_at_k": 1.0,
-      "recall_at_k": 1.0,
-      "reciprocal_rank": 1.0,
-      "ground_truth_missing": false
-    },
-    {
-      "id": "q2",
-      "query": "What are the transparency obligations for providers of high-risk AI systems?",
-      "relevant_document_ids": [],
-      "retrieved": [
-        {
-          "chunk_id": "document_60_chunk011",
-          "document_id": "document_60",
-          "similarity": 0.859130859375,
-          "is_relevant": false
-        },
-        {
-          "chunk_id": "document_05_chunk039",
-          "document_id": "document_05",
-          "similarity": 0.855599045753479,
-          "is_relevant": false
-        },
         {
           "chunk_id": "document_01_chunk019",
           "document_id": "document_01",
-          "similarity": 0.854873538017273,
+          "similarity": 0.8777722716331482,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_60_chunk011",
+          "document_id": "document_60",
+          "similarity": 0.8717092871665955,
           "is_relevant": false
         },
         {
-          "chunk_id": "document_05_chunk040",
-          "document_id": "document_05",
-          "similarity": 0.8532243371009827,
+          "chunk_id": "document_61_chunk086",
+          "document_id": "document_61",
+          "similarity": 0.8698889017105103,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_61_chunk344",
+          "document_id": "document_61",
+          "similarity": 0.851183295249939,
           "is_relevant": false
         },
         {
           "chunk_id": "document_05_chunk076",
           "document_id": "document_05",
-          "similarity": 0.8383266925811768,
-          "is_relevant": false
+          "similarity": 0.8480430841445923,
+          "is_relevant": true
         }
       ],
-      "precision_at_k": 0.0,
-      "recall_at_k": null,
-      "reciprocal_rank": 0.0,
-      "ground_truth_missing": true
+      "precision_at_k": 0.4,
+      "recall_at_k": 0.6666666666666666,
+      "reciprocal_rank": 1.0,
+      "ground_truth_missing": false
     },
     {
-      "id": "q3",
-      "query": "Which AI practices does the AI Act prohibit as posing unacceptable risk?",
+      "id": "Q2",
+      "query": "What does the EU AI Act say about prohibited AI practices?",
       "relevant_document_ids": [
-        "document_13"
+        "document_01",
+        "document_29"
       ],
       "retrieved": [
         {
-          "chunk_id": "document_01_chunk006",
-          "document_id": "document_01",
-          "similarity": 0.8657090067863464,
-          "is_relevant": false
-        },
-        {
-          "chunk_id": "document_14_chunk005",
-          "document_id": "document_14",
-          "similarity": 0.795654833316803,
-          "is_relevant": false
-        },
-        {
-          "chunk_id": "document_13_chunk005",
+          "chunk_id": "document_13_chunk062",
           "document_id": "document_13",
-          "similarity": 0.795654833316803,
+          "similarity": 0.8664638996124268,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_14_chunk062",
+          "document_id": "document_14",
+          "similarity": 0.8664638996124268,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_29_chunk006",
+          "document_id": "document_29",
+          "similarity": 0.8399910926818848,
           "is_relevant": true
         },
         {
-          "chunk_id": "document_01_chunk010",
-          "document_id": "document_01",
-          "similarity": 0.791049063205719,
+          "chunk_id": "document_29_chunk005",
+          "document_id": "document_29",
+          "similarity": 0.8399085998535156,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_29_chunk008",
+          "document_id": "document_29",
+          "similarity": 0.8389317989349365,
+          "is_relevant": true
+        }
+      ],
+      "precision_at_k": 0.6,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 0.3333333333333333,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q3",
+      "query": "How does the NIST AI Risk Management Framework work?",
+      "relevant_document_ids": [
+        "document_07",
+        "document_08",
+        "document_10"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_07_chunk000",
+          "document_id": "document_07",
+          "similarity": 0.8478562831878662,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_08_chunk000",
+          "document_id": "document_08",
+          "similarity": 0.8140012621879578,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_11_chunk000",
+          "document_id": "document_11",
+          "similarity": 0.798629641532898,
           "is_relevant": false
         },
         {
-          "chunk_id": "document_27_chunk002",
-          "document_id": "document_27",
-          "similarity": 0.787529706954956,
+          "chunk_id": "document_15_chunk059",
+          "document_id": "document_15",
+          "similarity": 0.761678159236908,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_10_chunk000",
+          "document_id": "document_10",
+          "similarity": 0.7226083874702454,
+          "is_relevant": true
+        }
+      ],
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q4",
+      "query": "What are the OECD AI Principles?",
+      "relevant_document_ids": [
+        "document_12"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_12_chunk000",
+          "document_id": "document_12",
+          "similarity": 0.8689200282096863,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_15_chunk020",
+          "document_id": "document_15",
+          "similarity": 0.8328284025192261,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_14_chunk160",
+          "document_id": "document_14",
+          "similarity": 0.798839807510376,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_15_chunk160",
+          "document_id": "document_15",
+          "similarity": 0.798839807510376,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_14_chunk129",
+          "document_id": "document_14",
+          "similarity": 0.7519163489341736,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q5",
+      "query": "What is the timeline for the EU AI Act implementation?",
+      "relevant_document_ids": [
+        "document_06"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_14_chunk076",
+          "document_id": "document_14",
+          "similarity": 0.871376633644104,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_13_chunk076",
+          "document_id": "document_13",
+          "similarity": 0.871376633644104,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_06_chunk000",
+          "document_id": "document_06",
+          "similarity": 0.8538239598274231,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_15_chunk064",
+          "document_id": "document_15",
+          "similarity": 0.8511210680007935,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_13_chunk033",
+          "document_id": "document_13",
+          "similarity": 0.8479209542274475,
           "is_relevant": false
         }
       ],
@@ -136,40 +229,128 @@
       "ground_truth_missing": false
     },
     {
-      "id": "q4",
-      "query": "How does US civil rights law intersect with algorithmic discrimination?",
+      "id": "Q6",
+      "query": "What are the risk categories defined in the AI Act?",
       "relevant_document_ids": [
-        "document_14"
+        "document_01",
+        "document_05"
       ],
       "retrieved": [
         {
-          "chunk_id": "document_14_chunk039",
-          "document_id": "document_14",
-          "similarity": 0.7252987623214722,
+          "chunk_id": "document_29_chunk000",
+          "document_id": "document_29",
+          "similarity": 0.8047627210617065,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_27_chunk002",
+          "document_id": "document_27",
+          "similarity": 0.7974262833595276,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_28_chunk002",
+          "document_id": "document_28",
+          "similarity": 0.7974262833595276,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_05_chunk029",
+          "document_id": "document_05",
+          "similarity": 0.7939455509185791,
           "is_relevant": true
         },
         {
-          "chunk_id": "document_13_chunk039",
-          "document_id": "document_13",
-          "similarity": 0.7252987623214722,
+          "chunk_id": "document_01_chunk005",
+          "document_id": "document_01",
+          "similarity": 0.7923645973205566,
+          "is_relevant": true
+        }
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.25,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q7",
+      "query": "What obligations do deployers of high-risk AI systems have?",
+      "relevant_document_ids": [
+        "document_05",
+        "document_36"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_61_chunk420",
+          "document_id": "document_61",
+          "similarity": 0.91086745262146,
           "is_relevant": false
         },
         {
-          "chunk_id": "document_05_chunk048",
+          "chunk_id": "document_05_chunk041",
           "document_id": "document_05",
-          "similarity": 0.724226713180542,
+          "similarity": 0.9081549644470215,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_61_chunk105",
+          "document_id": "document_61",
+          "similarity": 0.8822317123413086,
           "is_relevant": false
         },
         {
-          "chunk_id": "document_15_chunk037",
+          "chunk_id": "document_61_chunk107",
+          "document_id": "document_61",
+          "similarity": 0.8748171329498291,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_61_chunk440",
+          "document_id": "document_61",
+          "similarity": 0.8638660907745361,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 0.5,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q8",
+      "query": "How does UNESCO approach AI ethics?",
+      "relevant_document_ids": [
+        "document_13"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_13_chunk000",
+          "document_id": "document_13",
+          "similarity": 0.8003072142601013,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_15_chunk016",
           "document_id": "document_15",
-          "similarity": 0.7107797861099243,
+          "similarity": 0.7945335507392883,
           "is_relevant": false
         },
         {
-          "chunk_id": "document_55_chunk006",
-          "document_id": "document_55",
-          "similarity": 0.6867054104804993,
+          "chunk_id": "document_15_chunk110",
+          "document_id": "document_15",
+          "similarity": 0.766633927822113,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_14_chunk110",
+          "document_id": "document_14",
+          "similarity": 0.766633927822113,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_15_chunk050",
+          "document_id": "document_15",
+          "similarity": 0.7620207071304321,
           "is_relevant": false
         }
       ],
@@ -179,44 +360,304 @@
       "ground_truth_missing": false
     },
     {
-      "id": "q5",
-      "query": "When did the AI Act's provisions on prohibited AI practices enter into force?",
+      "id": "Q9",
+      "query": "What is the role of the European AI Office?",
+      "relevant_document_ids": [
+        "document_02",
+        "document_03"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_02_chunk000",
+          "document_id": "document_02",
+          "similarity": 0.8597503900527954,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_02_chunk013",
+          "document_id": "document_02",
+          "similarity": 0.843711793422699,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_02_chunk011",
+          "document_id": "document_02",
+          "similarity": 0.821642279624939,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_05_chunk024",
+          "document_id": "document_05",
+          "similarity": 0.7986681461334229,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_02_chunk001",
+          "document_id": "document_02",
+          "similarity": 0.7978038787841797,
+          "is_relevant": true
+        }
+      ],
+      "precision_at_k": 0.8,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q10",
+      "query": "What standards support the EU AI Act?",
+      "relevant_document_ids": [
+        "document_04"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_04_chunk007",
+          "document_id": "document_04",
+          "similarity": 0.8212751746177673,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_58_chunk011",
+          "document_id": "document_58",
+          "similarity": 0.820088267326355,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_57_chunk011",
+          "document_id": "document_57",
+          "similarity": 0.820088267326355,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_13_chunk068",
+          "document_id": "document_13",
+          "similarity": 0.8145509362220764,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_14_chunk068",
+          "document_id": "document_14",
+          "similarity": 0.8145509362220764,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q11",
+      "query": "What are the obligations for general-purpose AI models?",
+      "relevant_document_ids": [
+        "document_36"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_61_chunk112",
+          "document_id": "document_61",
+          "similarity": 0.8870296478271484,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_01_chunk023",
+          "document_id": "document_01",
+          "similarity": 0.8490954637527466,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_05_chunk065",
+          "document_id": "document_05",
+          "similarity": 0.8457592129707336,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_61_chunk537",
+          "document_id": "document_61",
+          "similarity": 0.8455501794815063,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_05_chunk017",
+          "document_id": "document_05",
+          "similarity": 0.8446291089057922,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q12",
+      "query": "How is the AI Act governed and enforced?",
+      "relevant_document_ids": [
+        "document_55",
+        "document_58"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_05_chunk087",
+          "document_id": "document_05",
+          "similarity": 0.9027246832847595,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_01_chunk030",
+          "document_id": "document_01",
+          "similarity": 0.8591595888137817,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_55_chunk000",
+          "document_id": "document_55",
+          "similarity": 0.8348921537399292,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_05_chunk001",
+          "document_id": "document_05",
+          "similarity": 0.8265244960784912,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_15_chunk000",
+          "document_id": "document_15",
+          "similarity": 0.8052049875259399,
+          "is_relevant": false
+        }
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 0.3333333333333333,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q13",
+      "query": "What is the AI Pact and how does it work?",
       "relevant_document_ids": [
         "document_60"
       ],
       "retrieved": [
         {
-          "chunk_id": "document_01_chunk033",
-          "document_id": "document_01",
-          "similarity": 0.8309394121170044,
+          "chunk_id": "document_05_chunk097",
+          "document_id": "document_05",
+          "similarity": 0.8041970133781433,
           "is_relevant": false
+        },
+        {
+          "chunk_id": "document_02_chunk015",
+          "document_id": "document_02",
+          "similarity": 0.8034734725952148,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_59_chunk016",
+          "document_id": "document_59",
+          "similarity": 0.793738603591919,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_60_chunk016",
+          "document_id": "document_60",
+          "similarity": 0.7937385439872742,
+          "is_relevant": true
         },
         {
           "chunk_id": "document_60_chunk000",
           "document_id": "document_60",
-          "similarity": 0.80584716796875,
+          "similarity": 0.768858790397644,
+          "is_relevant": true
+        }
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.25,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q14",
+      "query": "What is the EU AI Act impact assessment about?",
+      "relevant_document_ids": [
+        "document_38"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_38_chunk000",
+          "document_id": "document_38",
+          "similarity": 0.8408264517784119,
           "is_relevant": true
         },
         {
-          "chunk_id": "document_13_chunk003",
+          "chunk_id": "document_13_chunk060",
           "document_id": "document_13",
-          "similarity": 0.798146665096283,
+          "similarity": 0.816874623298645,
           "is_relevant": false
         },
         {
-          "chunk_id": "document_14_chunk003",
+          "chunk_id": "document_14_chunk060",
           "document_id": "document_14",
-          "similarity": 0.798146665096283,
+          "similarity": 0.816874623298645,
           "is_relevant": false
         },
         {
-          "chunk_id": "document_05_chunk082",
-          "document_id": "document_05",
-          "similarity": 0.7808045148849487,
+          "chunk_id": "document_14_chunk065",
+          "document_id": "document_14",
+          "similarity": 0.8032522797584534,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_13_chunk065",
+          "document_id": "document_13",
+          "similarity": 0.8032522797584534,
           "is_relevant": false
         }
       ],
       "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "ground_truth_missing": false
+    },
+    {
+      "id": "Q15",
+      "query": "What are the EU guidelines on AI system definition?",
+      "relevant_document_ids": [
+        "document_28"
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "document_27_chunk004",
+          "document_id": "document_27",
+          "similarity": 0.8275029063224792,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_28_chunk004",
+          "document_id": "document_28",
+          "similarity": 0.8275028467178345,
+          "is_relevant": true
+        },
+        {
+          "chunk_id": "document_29_chunk001",
+          "document_id": "document_29",
+          "similarity": 0.8238441348075867,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_27_chunk007",
+          "document_id": "document_27",
+          "similarity": 0.8082880973815918,
+          "is_relevant": false
+        },
+        {
+          "chunk_id": "document_28_chunk007",
+          "document_id": "document_28",
+          "similarity": 0.8082880973815918,
+          "is_relevant": true
+        }
+      ],
+      "precision_at_k": 0.4,
       "recall_at_k": 1.0,
       "reciprocal_rank": 0.5,
       "ground_truth_missing": false
