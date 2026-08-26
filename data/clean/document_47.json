@@ -1,0 +1,16 @@
+{
+  "document_id": "document_47",
+  "url": "https://digital-strategy.ec.europa.eu/en/news/commission-selects-europa-consortium-winner-frontier-ai-grand-challenge-project-build-european-open",
+  "url_hash": "d188bd95130cfb12",
+  "source": "digital-strategy.ec.europa.eu",
+  "title": "Commission selects EUROPA consortium as the winner of the Frontier AI Grand Challenge, a project to build European open-source frontier AI model in all 24 EU languages | Shaping Europe’s digital future",
+  "text": "The project will develop an open-source artificial intelligence (AI) model covering all 24 official EU languages.\nThe Commission chose EUROPA to help strengthen Europe's capacity to develop advanced AI on its own infrastructure. The project also shows that Europe has the talent, infrastructure and industrial capacity to build advanced AI systems.\nEUROPA's model will be openly available and designed to perform at the forefront of global AI capabilities. It will help ensure that more people and organisations across the Union can benefit from advances in AI, making advanced AI more accessible to businesses, researchers and public institutions across Europe's linguistic diversity.\nLaunched in February 2026, the Frontier AI Grand Challenge invited Europe's leading AI innovators to propose a model with more than 400 billion parameters, a scale associated with the world's most advanced AI systems.\nHenna Virkkunen, Executive Vice-President for Tech Sovereignty, Security and Democracy, said:\n“Europe can lead in advanced AI on its own terms. EUROPA will build a frontier European AI model in all 24 EU languages, showing that we can match the best while staying true to our values. This is about strengthening Europe's ability to shape AI's future with openness, trust and strategic autonomy at its core.”",
+  "category": "official_eu",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:49:20.217775+00:00",
+  "raw_char_count": 1311,
+  "clean_char_count": 1311,
+  "chars_removed": 0,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_47.json",
+  "content_quality": "ok"
+}

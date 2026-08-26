@@ -1,0 +1,16 @@
+{
+  "document_id": "document_06",
+  "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+  "url_hash": "8dfaa29db42b2ec9",
+  "source": "ai-act-service-desk.ec.europa.eu",
+  "title": "Timeline for the Implementation of the EU AI Act | AI Act Service Desk",
+  "text": "The EU’s AI Act legislation applies progressively, with a full roll-out of the main application milestones foreseen by 2 August 2028. The timeline takes into account the AI Act amendments introduced by Digital Omnibus on AI.\n\n- 01 Aug 2024Entry into force\n- 02 Feb 2025General provisions (definitions & AI literacy) and prohibitions apply\n- 02 Aug 2025Rules for general-purpose AI apply and governance must be in place\n- AI Act obligations for providers of general-purpose AI models enter into application.\n\n- Member States need to designate national competent authorities and adopt national laws on penalties.\n\n- EU-level governance (AI Board, Scientific Panel, Advisory Forum) must be set up.\n- 02 Aug 2026The majority of rules of the AI Act come into force and enforcement starts for applicable rules\n- Transparency rules (Article 50) start to apply.\n- Measures in support of innovation start apply.\n- Enforcement of the AI Act starts at national and EU-level concerning general-purpose AI models, prohibitions, transparency rules and AI literacy.\n- 02 Dec 2026New prohibitions + Article 50(2) transition apply **\n- Prohibitions, for AI systems generating non-consensual sexual deepfakes and child sexual abuse material, start to apply.\n- Transitional deadline for certain providers of AI systems, including GPAI systems, generating synthetic content, that were already placed on the market before 02 Aug 2026, to comply with Article 50(2).\n- 02 Aug 2027Member States should have at least one AI regulatory sandbox per country operational\n- 02 Dec 2027Rules for high-risk AI systems in Annex III apply **\n- 02 Aug 2028Rules for high-risk AI embedded in regulated products covered by Annex I apply **",
+  "category": "official_eu",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:48:28.980040+00:00",
+  "raw_char_count": 1710,
+  "clean_char_count": 1702,
+  "chars_removed": 8,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_06.json",
+  "content_quality": "ok"
+}

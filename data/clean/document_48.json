@@ -1,0 +1,16 @@
+{
+  "document_id": "document_48",
+  "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+  "url_hash": "453dc28b057eae28",
+  "source": "digital-strategy.ec.europa.eu",
+  "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August | Shaping Europe’s digital future",
+  "text": "On the same date, new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it.\nUnder the new rules, chatbots and other interactive AI systems will have to tell users they are dealing with AI, not a human. Deepfakes (images, videos, or audio that have been edited or generated using AI) will have to be labelled. AI-generated or altered content will also have to carry machine-readable marks so it can be detected more easily.\nThe measures are intended to reduce deception and manipulation and help people make informed choices. They also give businesses clearer obligations and a practical way to show compliance. The Commission published a first list of more than 180 organisations that have signed the Code of Practice on transparency of AI-generated content that operationalises the rules on transparency of AI-generated content.\nRead the full press release.\nRead more about the Enforcement of the AI Act and the:\n- AI Act complaints tool\n- AI Act Whistleblower Tool\n- Complaints channel for downstream providers using general-purpose AI models\nFind more information about:",
+  "category": "official_eu",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:49:20.934858+00:00",
+  "raw_char_count": 1190,
+  "clean_char_count": 1190,
+  "chars_removed": 0,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_48.json",
+  "content_quality": "ok"
+}

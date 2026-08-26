@@ -1,0 +1,16 @@
+{
+  "document_id": "document_44",
+  "url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+  "url_hash": "b904110e863b7224",
+  "source": "digital-strategy.ec.europa.eu",
+  "title": "AI Omnibus enters into force | Shaping Europe’s digital future",
+  "text": "The AI Omnibus, proposed as part of the digital omnibus package on 19 November 2025, delivers a targeted simplification of the AI rulebook while preserving strong safeguards for people’s safety and fundamental rights.\nIt supports innovation and competitiveness by easing compliance for smaller businesses, extending timelines, expanding testing and experimentation opportunities, and providing greater legal clarity for companies developing and deploying AI in Europe.\nThe updates introduce:\nInnovation support\n- Support for growing companies: Some measures previously reserved for SMEs are extended to small mid-cap companies (SMCs), helping more businesses benefit from a proportionate approach\n- Testing and experimentation: Expands access to regulatory sandboxes and introduces an EU-level regulatory sandbox, giving companies more space to develop and test AI systems under regulatory supervision\nExtended timelines\n- High-risk AI systems in Annex III: Rules apply starting 2 December 2027\n- High-risk AI embedded in physical products (machinery, toys, lifts, etc.) in Annex I: Rules apply starting 2 August 2028\nReduced administrative burdens\n- Simplification for SMCs: Extends simplified legal obligations for SMEs to small and mid-cap companies\n- AI literacy: Previous AI literacy requirement for companies is simplified, with the Commission and the Member States taking a stronger role in promoting AI literacy\n- EU database registration: Simplifies obligation to register exempted AI systems in the EU central database\nSafety and fundamental rights\n- Ban on nudification apps: Prohibits AI systems that generate non-consensual sexually explicit and intimate content or child sexual abuse material\n- Bias detection: Allows for the processing of special categories of personal data to detect and correct bias\nAI governance alignment\n- Extended enforcement powers: The AI Office will have extended oversight of certain AI systems, including those built on general-purpose models and embedded in large online platforms and search engines\n- Legal and procedural clarity: Clarifies interplay between the AI Act and other EU laws and simplifies procedures for conformity assessment bodies",
+  "category": "official_eu",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:49:17.942905+00:00",
+  "raw_char_count": 2191,
+  "clean_char_count": 2191,
+  "chars_removed": 0,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_44.json",
+  "content_quality": "ok"
+}

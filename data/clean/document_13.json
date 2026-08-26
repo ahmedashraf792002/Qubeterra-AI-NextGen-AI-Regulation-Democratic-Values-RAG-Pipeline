@@ -1,0 +1,16 @@
+{
+  "document_id": "document_13",
+  "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+  "url_hash": "831d1af606b537dd",
+  "source": "www.unesco.org",
+  "title": "Ethics of Artificial Intelligence - AI | UNESCO",
+  "text": "Recommendation on the Ethics of Artificial Intelligence\nThe rapid developments of artificial intelligence (AI) have created many opportunities globally, such as facilitating healthcare diagnoses and treatment, opening access to more tailored learning, and creating new means to safeguard and protect cultural diversity, among many others.\nHowever, these changes also raise profound ethical concerns. These arise from the way AI systems are developed, designed, deployed, and used, which may lead to reproducing and amplifying biases, contributing to climate degradation, threatening human rights, and more.\nIn November 2021, UNESCO's 193 Member States adopted the first global standard on AI ethics: the Recommendation on the Ethics of Artificial Intelligence.\nAt its core, it states that AI must respect human rights and human dignity. It is grounded in key principles such as transparency, fairness, environmental sustainability, and human oversight of AI systems, which guide its ethical framework.\nThis Recommendation doesn’t focus only on ethical values and principles but also lays out concrete policy recommendations to help implement them, across policy areas from gender to data to international cooperation.\nCore values\nCore principles: A human rights approach to AI\nAreas of policy action\nKey policy areas operationalise the values and principles set out in the Recommendation.\nThe policy actions can guide societies in dealing responsibly with the known and unknown impacts of AI technologies on human beings, societies and the environment and ecosystems, and offers them a basis to accept or reject AI technologies.",
+  "category": "official_international",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:48:46.384078+00:00",
+  "raw_char_count": 1628,
+  "clean_char_count": 1628,
+  "chars_removed": 0,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_13.json",
+  "content_quality": "ok"
+}

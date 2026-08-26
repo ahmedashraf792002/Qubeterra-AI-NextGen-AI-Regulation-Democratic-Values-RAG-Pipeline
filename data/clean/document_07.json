@@ -1,0 +1,16 @@
+{
+  "document_id": "document_07",
+  "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+  "url_hash": "54dbc15413425997",
+  "source": "www.nist.gov",
+  "title": "AI Risk Management Framework | NIST",
+  "text": "On April 7, 2026, NIST released a concept note for an AI RMF Profile on Trustworthy AI in Critical Infrastructure. The profile will guide critical infrastructure operators towards specific risk management practices to consider when engaging AI-enabled capabilities. Learn more.\nThe AI RMF 1.0 is being revised as part of the White House AI Action Plan.\nDownload the AI RMF 1.0 View the AI RMF Playbook Visit the AI Resource Center\nLed by the Information Technology Laboratory (ITL) AI Program, and in collaboration with the private and public sectors, NIST has developed a framework to better manage risks to individuals, organizations, and society associated with artificial intelligence (AI). The NIST AI Risk Management Framework (AI RMF) is intended for voluntary use and to improve the ability to incorporate trustworthiness considerations into the design, development, use, and evaluation of AI products, services, and systems.\nReleased on January 26, 2023, the Framework was developed through a consensus-driven, open, transparent, and collaborative process that included a Request for Information, several draft versions for public comments, multiple workshops, and other opportunities to provide input. It is intended to build on, align with, and support AI risk management efforts by others (Fact Sheet).\nA companion NIST AI RMF Playbook also has been published by NIST along with an AI RMF Roadmap, AI RMF Crosswalk, and various Perspectives.\nOn March 30, 2023, NIST launched the Trustworthy and Responsible AI Resource Center, which will facilitate implementation of, and international alignment with, the AI RMF. Examples of how other organizations are building on and using the AI RMF can be found via the AIRC’s Use Case page.\nOn July 26, 2024, NIST released NIST-AI-600-1, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile. The profile can help organizations identify unique risks posed by generative AI and proposes actions for generative AI risk management that best aligns with their goals and priorities.\nTo view public comments received on the previous drafts of the AI RMF and Requests for Information, see the AI RMF Development page.\naiframework [at] nist.gov (aiframework[at]nist[dot]gov)",
+  "category": "official_us",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:48:33.200999+00:00",
+  "raw_char_count": 2257,
+  "clean_char_count": 2257,
+  "chars_removed": 0,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_07.json",
+  "content_quality": "ok"
+}

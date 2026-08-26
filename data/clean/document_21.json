@@ -1,0 +1,16 @@
+{
+  "document_id": "document_21",
+  "url": "https://digital-strategy.ec.europa.eu/en",
+  "url_hash": "46ccd5f2173919e6",
+  "source": "digital-strategy.ec.europa.eu",
+  "title": "Shaping Europe’s digital future | Shaping Europe’s digital future",
+  "text": "Commission proposes Tech Sovereignty Package to strengthen Europe’s digital autonomy and resilience\n\nThe European Commission has presented the European Technological Sovereignty Package, a set of measures to strengthen Europe's capacity in semiconductors, artificial intelligence (AI), cloud and open source. These measures support Europe’s ambition to become an AI continent, strengthen its digital autonomy and help build a more sustainable digital future.",
+  "category": "official_eu",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:48:56.237738+00:00",
+  "raw_char_count": 459,
+  "clean_char_count": 458,
+  "chars_removed": 1,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_21.json",
+  "content_quality": "low"
+}

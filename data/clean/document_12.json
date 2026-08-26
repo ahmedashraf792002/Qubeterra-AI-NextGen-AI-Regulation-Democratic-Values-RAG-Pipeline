@@ -1,0 +1,16 @@
+{
+  "document_id": "document_12",
+  "url": "https://oecd.ai/en/ai-principles",
+  "url_hash": "e69ee8da00c6b193",
+  "source": "oecd.ai",
+  "title": "AI Principles Overview - OECD.AI",
+  "text": "The OECD AI Principles were initially adopted in 2019 and updated in May 2024. Adherents updated them to consider new technological and policy developments, ensuring they remain robust and fit for purpose.\nThe Principles guide AI actors in their efforts to develop trustworthy AI and provide policymakers with recommendations for effective AI policies.\nCountries use the OECD AI Principles and related tools to shape policies and create AI risk frameworks, building a foundation for global interoperability between jurisdictions. Today, the European Union, the Council of Europe, the United States, and the United Nations and other jurisdictions use the OECD’s definition of an AI system and lifecycle below in their legislative and regulatory frameworks and guidance. The principles, definition and lifecycle are all part of the OECD Recommendation on Artificial Intelligence.",
+  "category": "official_international",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:48:41.087726+00:00",
+  "raw_char_count": 877,
+  "clean_char_count": 877,
+  "chars_removed": 0,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_12.json",
+  "content_quality": "ok"
+}

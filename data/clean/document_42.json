@@ -1,0 +1,16 @@
+{
+  "document_id": "document_42",
+  "url": "https://digital-strategy.ec.europa.eu/en/news",
+  "url_hash": "e2925aef5829e23d",
+  "source": "digital-strategy.ec.europa.eu",
+  "title": "News & Views | Shaping Europe’s digital future",
+  "text": "Search Options\nSearch Results (5901)\nHighlight\nSeveral Digital Europe Programme actions are enabling business, public authorities and researchers to share and reuse data securely and efficiently.\nThe European Commission and the SpaceRISE consortium concluded negotiations and signed an implementation agreement to roll out IRIS2, the European Union's new flagship satellite constellation.\nThe European Commission has completed the final legal steps to establish the Scaleup Europe Fund, which will start boosting Europe's scaleup companies to grow faster and compete globally with a target of €5 billion.\nThe fourth meeting of the Signatory Taskforce under the General-Purpose AI (GPAI) Code of Practice focused on the Safety and Security Chapter and the Copyright Chapter.\nAbout 190 organisations signed the Code of Practice on Transparency of AI-generated Content ahead of the entry into application of the legal obligations.\nManufacturers, developers and businesses of all sizes across the EU now have new guidance on how to apply the Cyber Resilience Act. This will help them prepare for mandatory cybersecurity requirements and reporting obligations.\nThe European Commission has sent TikTok preliminary findings indicating that TikTok accounts of minors do not meet the safety standards required under the Digital Services Act (DSA).\nThe European Commission took two decisions finding non-compliance by Google with the Digital Markets Act (DMA) for self-preferencing its own services on Google Search, and for putting in place restrictions on businesses to direct consumers to alternative, often cheaper, purchase channels on Google Play (steering).\nThis project will develop and test trustworthy, human-centric and compliant GenAI solutions to improve how public administrations deliver services to citizens and carry out their internal activities.",
+  "category": "official_eu",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:49:15.975672+00:00",
+  "raw_char_count": 1854,
+  "clean_char_count": 1854,
+  "chars_removed": 0,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_42.json",
+  "content_quality": "ok"
+}

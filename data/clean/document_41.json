@@ -1,0 +1,16 @@
+{
+  "document_id": "document_41",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/rise-intelligent-edge-insights-metaos",
+  "url_hash": "72bf217d754e20e5",
+  "source": "digital-strategy.ec.europa.eu",
+  "title": "The rise of the intelligent edge – Insights into MetaOS | Shaping Europe’s digital future",
+  "text": "Edge computing is reshaping how we process data, design networks and systems and build AI-powered applications. Edge computing leverages the explosion of IoT Devices: Smart homes, wearables, industrial sensors - all these devices generate massive data that needs rapid processing.\nEuropean companies hold strong positions in industrial and business sectors, including enterprise systems, manufacturing, smart energy systems, home appliances, mobility, agriculture, and green technologies. These sectors are transitioning toward software-defined systems that enable functionalities to be programmed and updated remotely. A standard operating system manages hardware in a single device and hides the technical complexity from programmers. A MetaOS extends this across multiple connected devices, moves complexity to the software layer and masks the complexity of managing them together. The Meta Operating System concept was born to address this transition.\nThe below brochure provides light-weight insights to the MetaOS concept and some key application scenarios, which forms the baseline for a cluster of six Meta-OS projects. These projects have spearheaded the development of next generation of higher-level (meta) operating systems for the smart Internet of Things with strong computing capacity at the smart device, system and edge-level, embedded in a compute continuum from IoT-to-edge-to-cloud. The MetaOS initiative worked over a period from 2021–2025, having supported six projects under the Horizon Europe programme with a total funding of about €60 million.\nYou can download the full brochure below.",
+  "category": "official_eu",
+  "domain": "AI Regulations & Democratic Values",
+  "collected_at": "2026-08-25T21:49:14.838028+00:00",
+  "raw_char_count": 1611,
+  "clean_char_count": 1611,
+  "chars_removed": 0,
+  "raw_source_path": "D:\\GITHUB PROJECTS\\QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG - Copy\\data\\raw\\document_41.json",
+  "content_quality": "ok"
+}
