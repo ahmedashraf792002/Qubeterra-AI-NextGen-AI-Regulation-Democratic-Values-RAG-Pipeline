@@ -1,0 +1,14 @@
+{
+  "document_id": "document_11",
+  "url": "https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook",
+  "url_hash": "56db973855865e0a",
+  "source": "www.nist.gov",
+  "title": "NIST AI RMF Playbook | NIST",
+  "text": "In collaboration with the private and public sectors, the NIST Information Technology Laboratory (ITL) has created a companion AI RMF playbook for voluntary use – which suggests ways to navigate and use the AI Risk Management Framework (AI RMF) to incorporate trustworthiness considerations in the design, development, deployment, and use of AI systems. The Playbook will be updated after the AI RMF 1.0 is revised.\nThe Playbook is based on AI RMF 1.0 (released on January 26, 2023). It includes suggested actions, references, and related guidance to achieve the outcomes for the four functions in the AI RMF: Govern, Map, Measure, and Manage. Playbook suggestions are developed based on best practices and research insights.\nThe AI RMF and the Playbook are intended for voluntary use. Organizations may utilize this information by borrowing as many – or as few – suggestions as apply to their industry use case or interests.\nPlaybook content will evolve to enable community review and feedback about its informativeness, accuracy and specificity. The first complete version announced on March 30, 2023, includes options for filtering or tailoring information to user preferences and requirements.\nComments are welcome anytime. The Playbook will be updated based on public comment as needed Feedback may be provided either as comments or as specific line-edit additions or modifications. Send comments via email to aiframework [at] nist.gov (aiframework[at]nist[dot]gov).\nSign up to receive email notifications about NIST’s AI Initiatives here by entering your preferred email address and selecting Information Technology Laboratory > Artificial Intelligence in your subscriber preferences.",
+  "category": "official_us",
+  "crawl_depth": 0,
+  "collected_at": "2026-08-25T21:48:38.469848+00:00",
+  "domain": "AI Regulations & Democratic Values",
+  "char_count": 1690,
+  "content_quality": "ok"
+}

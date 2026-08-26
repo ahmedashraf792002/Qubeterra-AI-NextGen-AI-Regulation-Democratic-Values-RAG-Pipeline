@@ -1,0 +1,14 @@
+{
+  "document_id": "document_08",
+  "url": "https://airc.nist.gov/airmf-resources/airmf",
+  "url_hash": "70a180fdf02a32a0",
+  "source": "airc.nist.gov",
+  "title": "AI RMF\n\n\n      \n  \n  - AIRC",
+  "text": "The AI RMF 1.0 is being updated. A revised version is in progress.\nAI Risk Management Framework\nThe AI Risk Management Framework (AI RMF) is intended for voluntary use and to improve the ability to incorporate trustworthiness considerations into the design, development, use, and evaluation of AI products, services, and systems.\nAs a consensus resource, the AI RMF was developed in an open, transparent, multidisciplinary, and multistakeholder manner over an 18-month time period and in collaboration with more than 240 contributing organizations from private industry, academia, civil society, and government. Feedback received during the development of the AI RMF is publicly available on the NIST website.\n- \n Framing risk Framing risk includes information on:\n - Understanding and Addressing Risks, Impacts, and Harms\n - Challenges for AI Risk Management\n- \n AudienceIdentifying and managing AI risks and potential impacts requires a broad set of perspectives and actors across the AI lifecycle. The Audience section describes AI actors and the AI lifecycle.\n- \n AI Risks and TrustworthinessFor AI systems to be trustworthy, they often need to be responsive to a multiplicity of criteria that are of value to interested parties. Approaches which enhance AI trustworthiness can reduce negative AI risks. The AI Risks and Trustworthiness section articulates the characteristics of trustworthy AI and offers guidance for addressing them.\n- \n Effectiveness of the AI RMFThe Effectiveness section describes expected benefits for users of the framework.\n- \n AI RMF CoreThe AI RMF Core provides outcomes and actions that enable dialogue, understanding, and activities to manage AI risks and responsibility develop trustworthy AI systems. This is operationalized through four functions: Govern, Map, Measure, and Manage.\n- \n AI RMF ProfilesThe use-case Profiles are implementations of the AI RMF functions, categories, and subcategories for a specific setting or application based on the requirements, risk tolerance, and resources of the Framework user.\n- Appendix A: Descriptions of AI Actor Tasks\n- Appendix B: How AI Risks Differ from Traditional Software Risks\n- Appendix C: AI Risk Management and Human-AI Interaction\n- Appendix D: Attributes of the AI RMF",
+  "category": "official_us",
+  "crawl_depth": 0,
+  "collected_at": "2026-08-25T21:48:34.948387+00:00",
+  "domain": "AI Regulations & Democratic Values",
+  "char_count": 2259,
+  "content_quality": "ok"
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "document_40",
+  "url": "https://digital-strategy.ec.europa.eu/en/library/new-feasibility-study-introducing-eu-level-registry-text-and-data-mining-opt-out",
+  "url_hash": "67a79b4978a6e139",
+  "source": "digital-strategy.ec.europa.eu",
+  "title": "New feasibility study for introducing an EU-level registry of Text and Data Mining opt-out | Shaping Europe’s digital future",
+  "text": "The main purpose of this study is to investigate both the opportunity and feasibility of developing a registry for rights reservations (i.e. ‘opt-outs’) expressed by rightsholders under the Text and Data Mining (TDM) exception introduced in Article 4 of the 2019 Directive on copyright in the Digital Single Market (DSM Directive). As text and data mining techniques may be used extensively in the training of AI models, this exception provides a relevant framework for the use of protected content in this context.\nThe study explores how a registry could support rightholders in the expression of the TDM opt-outs on copyright protected works, as well as their identification by AI developers. With the aim of addressing some of the issues connected with the opt-out, the study investigates the viability of a registry making use of work-based identifiers, leveraging content-based fingerprinting technology and associated metadata. It also assesses which technical architecture a potential registry should adopt.\nConclusions from the study indicate that an EU registry could be a useful complementary instrument to boost the effective expression and detection of opt-outs from TDM.The registry would complement, not replace, existing opt-out solutions and sector-specific identifiers, where available.\nThe Commission will consider possible next steps, taking into account the outcomes of the study and the ongoing work of the EU Intellectual Property Office on copyright infrastructure in the digital and AI era.\nRead:",
+  "category": "official_eu",
+  "crawl_depth": 1,
+  "collected_at": "2026-08-25T21:49:14.159768+00:00",
+  "domain": "AI Regulations & Democratic Values",
+  "char_count": 1520,
+  "content_quality": "ok"
+}
