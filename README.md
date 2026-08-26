@@ -1,113 +1,248 @@
-# AI Regulation RAG — Week 1 (in progress)
+# Qubeterra AI NextGen — AI Regulations & Democratic Values RAG
 
-Knowledge infrastructure for a RAG pipeline on the **AI Regulation** domain
-(EU AI Act, US/NIST AI risk-management approach, international/OECD
-principles), for the Qubeterra AI NextGen Week 1 milestone.
+Retrieval-Augmented Generation pipeline for AI regulations and democratic values knowledge domain.
 
-**Status:** Task 1 (data collection) implemented. Cleaning, chunking,
-embedding, PostgreSQL storage, retrieval, and evaluation are not built yet.
+## Project Structure
 
-## Overview
-
-- **Domain:** AI regulation and governance (EU AI Act as primary reference,
-  plus US/NIST and international sources) — see `src/collection/seeds.py`.
-- **What's built so far:** a repeatable data-collection pipeline
-  (`src/collection/collect.py`) that fetches seed pages, optionally
-  crawls one hop of same-domain links to grow the set, extracts main body
-  text, cleans it, deduplicates by content hash, and writes one JSON
-  document per page into `data/raw/`.
-
-## Setup
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env             # not needed yet for this task, but create it early
+```
+├── src/
+│   ├── collection/          # Step 1: Web scraping & data collection
+│   ├── preprocessing/       # Step 2: Cleaning & normalization
+│   ├── chunking/            # Step 3: Structure-driven chunking
+│   ├── embeddings/          # Step 4: Vector embedding generation
+│   ├── storage/             # Step 5: PostgreSQL + pgvector storage
+│   ├── retrieval/           # Step 6: Vector similarity search
+│   └── evaluation/          # Step 7: Precision/Recall/MRR metrics
+├── tests/
+│   ├── collection/          # run.py + seed_urls.py
+│   ├── preprocessing/       # run.py
+│   ├── chunking/            # run.py
+│   ├── embeddings/          # run.py
+│   ├── storage/             # run.py + check_postgres.py
+│   ├── retrieval/           # run.py
+│   ├── evaluation/          # run.py + eval_dataset.py
+│   └── run_all_steps.py     # Run all 7 steps together
+├── data/
+│   ├── raw/                 # Raw collected documents
+│   ├── clean/               # Cleaned documents
+│   ├── chunks/              # Chunked documents (chunks.jsonl)
+│   ├── embeddings/          # Generated embeddings (embeddings.jsonl)
+│   └── evaluation/          # Evaluation results & reports
+├── sql/schema.sql           # PostgreSQL schema
+├── .env                     # Configuration (all parameters)
+└── .env.example             # Template configuration
 ```
 
-Requires Python 3.10+ (uses `X | None` type hints).
+## Prerequisites
 
-## Running the data-collection pipeline
+- Python 3.11+
+- PostgreSQL 14+ with pgvector extension
+- uv (package manager)
 
-```bash
-# Default run: seed URLs + 1 hop of same-domain crawling, up to 70 docs
-python -m src.collection.collect
-
-# Seeds only, no crawling
-python -m src.collection.collect --crawl-depth 0
-
-# Add extra URLs from a text file (one URL per line) on top of seeds.py
-python -m src.collection.collect --seeds-file more_urls.txt --max-docs 80
-```
-
-Output:
-- `data/raw/<doc_id>.json` — one file per collected document
-- `data/raw/manifest.json` — collection summary (count, breakdown by
-  source category)
-
-Each document JSON contains: `url`, `title`, `text`, `category`,
-`source_domain`, `content_hash`, `scraped_at`, `author`, `date`,
-`description`, `word_count`.
-
-## Design decisions
-
-**Source selection.** Seeds are curated official/primary sources
-(European Commission digital-strategy pages, EUR-Lex, NIST AI RMF,
-OECD AI Principles) plus a few reference/analysis pages, grouped by
-`category` in `seeds.py` so retrieval results can later be filtered or
-weighted by source type. This satisfies the brief's "prefer primary
-sources" guidance in the Research & Bias Rules section of the Theme 1
-brief. The list is intentionally a starting point — `--crawl-depth 1`
-follows in-domain links from each seed to grow past it, and it can be
-extended further via `--seeds-file` or by editing `seeds.py` directly.
-
-**Fetching.** Plain `httpx` GET with a browser-like User-Agent and
-exponential-backoff retries (`src/collection/fetch.py`). No paid
-scraping API — the sources here serve static HTML, so a direct request
-is enough. If a future source needs JS rendering, only `fetch.py` needs
-to change; `fetch_page(url) -> str` is the interface the rest of the
-pipeline depends on.
-
-**Extraction.** `trafilatura` (`src/collection/extract.py`) — open
-source, combines DOM heuristics with text-density scoring, and handles
-both news-style and structured government/legal pages better than
-naive tag-stripping.
-
-**Cleaning/normalization.** Unicode NFKC normalization, invisible/
-non-breaking whitespace removal, collapsed blank lines, and dropped
-short nav-fragment lines (`src/collection/normalize.py`).
-
-**Concurrency.** Threads (`ThreadPoolExecutor`), not `asyncio` —
-chosen deliberately to avoid event-loop/shared-async-client issues.
-
-**Deduplication.** SHA-256 hash (first 16 chars) of the normalized
-text, checked in-memory during a run. The same content sometimes
-appears at multiple URLs (query params, mirrors); hashing content
-rather than normalizing URLs catches that reliably.
-
-**Minimum length filter.** Documents under 40 words after cleaning are
-dropped as extraction stubs/noise (table fragments, empty shells).
-
-## Running tests
+## Installation
 
 ```bash
-python -m pytest tests/
+# Clone the project
+git clone <repo-url>
+cd QUBETERRA-AI-NEXTGEN-AI-REGULATIONS-DEMOCRATIC-VALUES-RAG
+
+# Install dependencies
+uv pip install -r requirements.txt
+uv pip install sentence-transformers psycopg python-dotenv pytest
+
+# Copy and edit .env
+cp .env.example .env
+# Edit .env with your PostgreSQL credentials
 ```
 
-(Test suite not yet written — placeholder for now.)
+## Database Setup (PostgreSQL + pgvector)
 
-## Known limitations
+### 1. Start PostgreSQL
 
-- No JS-rendering support yet; any source requiring a headless browser
-  would currently fail extraction.
-- Crawl discovery is same-domain only and one hop by default — deep
-  crawling / pagination handling not yet implemented.
-- No scheduled re-scrape / freshness TTL yet — this is a one-shot
-  collection run.
+**Using Docker (recommended):**
 
-## Next steps (not yet implemented)
+```bash
+# Start PostgreSQL with pgvector
+docker-compose up -d
+```
 
-Cleaning spot-checks, chunking strategy, embedding generation,
-PostgreSQL + pgvector storage, retrieval interface, and quantitative
-RAGAS-style evaluation — per the Week 1 milestone spec.
+**Or use local PostgreSQL:**
+
+Make sure PostgreSQL is running on port 5433 (or change `POSTGRES_PORT` in `.env`).
+
+### 2. Create Database
+
+```bash
+# Connect to PostgreSQL
+psql -U postgres -h localhost -p 5433
+
+# Create the database
+CREATE DATABASE ai_reg_rag;
+
+# Exit
+\q
+```
+
+### 3. Enable pgvector Extension
+
+The `sql/schema.sql` file handles this automatically when you run Step 5 (Storage). But if you want to do it manually:
+
+```bash
+psql -U postgres -h localhost -p 5433 -d ai_reg_rag -c "CREATE EXTENSION IF NOT EXISTS vector;"
+```
+
+### 4. Configure .env
+
+```env
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5433
+POSTGRES_DB=ai_reg_rag
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+```
+
+### 5. Load Data into Database
+
+```bash
+# Run storage step (loads chunks + embeddings into PostgreSQL)
+uv run python tests/storage/run.py
+```
+
+### 6. Verify Database Contents
+
+```bash
+# Check a specific chunk in the database
+uv run python tests/storage/check_postgres.py
+```
+
+### 7. Query the Database
+
+```bash
+# Run a retrieval query
+uv run python tests/retrieval/run.py
+
+# Custom query
+uv run python tests/retrieval/run.py --query "What is Article 5?" --top-k 3
+```
+
+## Configuration (.env)
+
+All pipeline parameters are configured in `.env`:
+
+```env
+# PostgreSQL
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5433
+POSTGRES_DB=ai_reg_rag
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+
+# Collection
+MAX_DOCUMENTS=60
+CRAWL_DEPTH=1
+DOCUMENT_NAME_PREFIX=document_
+DOCUMENT_NAME_DIGITS=2
+
+# Embeddings
+EMBEDDING_MODEL_NAME=BAAI/bge-small-en-v1.5
+EMBEDDING_DIMENSIONALITY=384
+MODEL_MAX_TOKENS=512
+ENCODE_BATCH_SIZE=32
+
+# Retrieval
+DEFAULT_TOP_K=5
+EVAL_TOP_K=5
+```
+
+## Running the Pipeline
+
+### Run all 7 steps at once
+
+```bash
+uv run python tests/run_all_steps.py
+```
+
+### Run specific steps
+
+```bash
+uv run python tests/run_all_steps.py --steps 1,2,3    # collection + clean + chunk
+uv run python tests/run_all_steps.py --steps 4,5       # embeddings + storage
+uv run python tests/run_all_steps.py --steps 6,7       # retrieval + evaluation
+```
+
+### Run individual steps
+
+| Step | Command |
+|------|---------|
+| 1. Collection | `uv run python tests/collection/run.py` |
+| 2. Preprocessing | `uv run python tests/preprocessing/run.py` |
+| 3. Chunking | `uv run python tests/chunking/run.py` |
+| 4. Embeddings | `uv run python tests/embeddings/run.py` |
+| 5. Storage | `uv run python tests/storage/run.py` |
+| 6. Retrieval | `uv run python tests/retrieval/run.py` |
+| 7. Evaluation | `uv run python tests/evaluation/run.py` |
+
+### Custom queries
+
+```bash
+uv run python tests/retrieval/run.py --query "What is Article 5?" --top-k 3
+```
+
+## Pipeline Steps
+
+1. **Collection** — Scrapes web pages from seed URLs, saves as JSON
+2. **Preprocessing** — Removes HTML, normalizes unicode, strips boilerplate
+3. **Chunking** — Splits documents at structural boundaries (Articles/Sections)
+4. **Embeddings** — Generates vectors using BAAI/bge-small-en-v1.5
+5. **Storage** — Loads chunks + embeddings into PostgreSQL with pgvector
+6. **Retrieval** — Vector similarity search with optional metadata filtering
+7. **Evaluation** — Computes Precision@K, Recall@K, MRR
+
+## Output
+
+- `data/raw/` — Raw collected documents
+- `data/clean/` — Cleaned documents
+- `data/chunks/chunks.jsonl` — Chunked documents
+- `data/embeddings/embeddings.jsonl` — Generated embeddings
+- `data/evaluation/results.json` — Evaluation metrics
+- `data/evaluation/report.md` — Human-readable evaluation report
+
+## Database Schema
+
+The PostgreSQL table `chunks` stores:
+
+| Column | Type | Description |
+|--------|------|-------------|
+| chunk_id | TEXT | Primary key (e.g. document_01_chunk003) |
+| document_id | TEXT | Source document ID |
+| chunk_index | INTEGER | Position in document |
+| structural_label | TEXT | e.g. "Article 5" |
+| text | TEXT | Chunk content |
+| char_count | INTEGER | Character count |
+| url | TEXT | Source URL |
+| title | TEXT | Document title |
+| source | TEXT | Source domain |
+| category | TEXT | e.g. official_eu, official_us |
+| domain | TEXT | Knowledge domain |
+| content_quality | TEXT | ok or low |
+| embedding_model | TEXT | e.g. BAAI/bge-small-en-v1.5 |
+| embedding | vector(384) | 384-dimensional vector |
+
+## Useful SQL Queries
+
+```sql
+-- Count total chunks
+SELECT COUNT(*) FROM chunks;
+
+-- Count chunks per document
+SELECT document_id, COUNT(*) as chunks FROM chunks GROUP BY document_id ORDER BY chunks DESC;
+
+-- Search for chunks containing specific text
+SELECT chunk_id, document_id, title, LEFT(text, 100) as snippet FROM chunks WHERE text ILIKE '%transparency%';
+
+-- Find chunks by category
+SELECT category, COUNT(*) FROM chunks GROUP BY category;
+
+-- Find low quality documents
+SELECT chunk_id, document_id, content_quality FROM chunks WHERE content_quality = 'low';
+```

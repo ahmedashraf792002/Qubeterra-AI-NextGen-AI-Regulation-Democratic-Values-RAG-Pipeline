@@ -1,33 +1,31 @@
 """
-Quantitative evaluation of the retrieval system (Section 11).
+Quantitative evaluation of the retrieval system.
 
-Metrics computed per query, at a configurable K:
-
-  Precision@K = (# relevant documents among top-K results) / K
-  Recall@K    = (# relevant documents among top-K results) / (total relevant for that query)
-  Reciprocal Rank = 1 / (rank of first relevant result), 0 if none found
-                     -> averaged across queries as MRR (Mean Reciprocal Rank)
-
-Relevance is judged at the DOCUMENT level, not the chunk level.
+Metrics: Precision@K, Recall@K, Reciprocal Rank (MRR).
+Relevance judged at DOCUMENT level.
 """
 
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "retrieval"))
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dotenv import load_dotenv
 
-from retrieve import retrieve  # noqa: E402
-from eval_dataset import EVAL_QUERIES  # noqa: E402
-import config  # noqa: E402
+load_dotenv(Path(__file__).resolve().parents[2] / ".env", override=True)
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "retrieval"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "test" / "evaluation"))
+
+from retrieve import retrieve
+from eval_dataset import EVAL_QUERIES
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 EVAL_OUTPUT_DIR = PROJECT_ROOT / "data" / "evaluation"
 
-EVAL_TOP_K = config.EVAL_TOP_K
+EVAL_TOP_K = int(os.getenv("EVAL_TOP_K", "5"))
 
 
 def evaluate_query(query_spec: dict, top_k: int = EVAL_TOP_K) -> dict:
@@ -154,9 +152,9 @@ def write_outputs(all_results: list[dict], summary: dict, top_k: int) -> tuple[P
         "",
         f"Top-K: {top_k}",
         f"Queries evaluated: {summary['queries_total']} "
-        f"({summary['queries_with_ground_truth']} with ground truth defined)",
+        f"({summary['queries_with_ground_truth']} with ground truth)",
         "",
-        "## Summary metrics",
+        "## Summary",
         "",
     ]
 
@@ -167,7 +165,7 @@ def write_outputs(all_results: list[dict], summary: dict, top_k: int) -> tuple[P
             f"- Mean Reciprocal Rank: {summary['mean_reciprocal_rank']:.3f}",
         ])
     else:
-        lines.append("- No queries had ground truth defined.")
+        lines.append("- No ground truth defined.")
 
     lines.extend(["", "## Per-query results", ""])
 
@@ -176,7 +174,7 @@ def write_outputs(all_results: list[dict], summary: dict, top_k: int) -> tuple[P
         lines.extend([
             f"### {r['id']}: {r['query']}",
             "",
-            f"- Relevant documents (ground truth): {r['relevant_document_ids'] or '(none defined)'}",
+            f"- Relevant docs: {r['relevant_document_ids'] or '(none)'}",
             f"- Precision@{top_k}: {r['precision_at_k']:.2f}",
             f"- Recall@{top_k}: {recall_display}",
             f"- Reciprocal Rank: {r['reciprocal_rank']:.2f}",
@@ -190,19 +188,6 @@ def write_outputs(all_results: list[dict], summary: dict, top_k: int) -> tuple[P
                 f"{item['similarity']:.4f} | {'✓' if item['is_relevant'] else ''} |"
             )
         lines.append("")
-
-    lines.extend([
-        "## Interpretation",
-        "",
-        "_(Fill in after reviewing the results above)_",
-        "",
-        "## Known weaknesses",
-        "",
-        "- Relevance judged at document level, not chunk level.",
-        "- No re-ranking or hybrid keyword search; pure vector similarity.",
-        "- Ground truth must be expanded before results are final.",
-        "",
-    ])
 
     report_path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -221,7 +206,7 @@ def main() -> None:
         print(f"Mean Recall@{EVAL_TOP_K}   : {summary['mean_recall_at_k']:.3f}")
         print(f"Mean Reciprocal Rank      : {summary['mean_reciprocal_rank']:.3f}")
     else:
-        print("[WARNING] No queries had ground truth defined.")
+        print("[WARNING] No ground truth defined.")
     print(f"Queries with ground truth : {summary['queries_with_ground_truth']}/{summary['queries_total']}")
 
     results_path, report_path = write_outputs(all_results, summary, EVAL_TOP_K)
