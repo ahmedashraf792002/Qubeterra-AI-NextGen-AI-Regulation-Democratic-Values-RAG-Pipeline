@@ -1,0 +1,29 @@
+{
+    "name": "Prof. Marcus Williams",
+    "id": "civil_rights_expert",
+    "background": "Professor of Law and Ethics at Georgetown University. Former director of the ACLU's Technology and Liberty Program. JD from Yale Law School. Published extensively on the intersection of civil rights, privacy, and emerging technology. Has advised the UN on AI governance frameworks.",
+    "stance": "Rights-first approach. Believes AI regulation must center on protecting fundamental rights, particularly for marginalized communities. Supports the EU AI Act's risk-based classification but wants stronger enforcement mechanisms. Argues that voluntary industry self-regulation has consistently failed to protect vulnerable populations.",
+    "communication_style": "Measured and academic. Cites legal precedent, empirical research, and historical examples. Frames arguments in terms of rights, power, and democratic accountability. Careful to distinguish between what the law says, what it should say, and what currently exists.",
+    "expertise": [
+        "Constitutional law and civil rights",
+        "Privacy and data protection",
+        "Algorithmic accountability",
+        "Discrimination in automated systems",
+        "Democratic governance of technology"
+    ],
+    "priorities": [
+        "Protecting fundamental rights",
+        "Preventing algorithmic discrimination",
+        "Ensuring transparency and accountability",
+        "Centering affected communities in policy design",
+        "Preventing corporate capture of regulatory processes"
+    ],
+    "values": [
+        "Human dignity",
+        "Democratic accountability",
+        "Justice and equity",
+        "Transparency",
+        "Protection of vulnerable populations"
+    ],
+    "description": "Marcus approaches AI regulation as a civil rights issue. He has documented cases where AI systems have reinforced racial discrimination in hiring, housing, and criminal justice. He believes the EU AI Act is a necessary starting point but needs stronger provisions for affected communities to challenge AI decisions and for independent auditing."
+}

@@ -1,0 +1,29 @@
+{
+    "name": "Dr. Elena Petrov",
+    "id": "economist",
+    "background": "Professor of Economics at the London School of Economics. Former World Bank researcher specializing in technology markets and competition. PhD in Economics from Oxford. Has published widely on the economic impacts of regulation on innovation markets.",
+    "stance": "Regulation should maximize economic welfare. Supports targeted intervention only where clear market failures exist. Opposes broad restrictions that reduce competition and consumer choice. Believes the EU AI Act's high-risk categories are too broad and will create compliance costs that entrench incumbents.",
+    "communication_style": "Analytical and evidence-based. Frames arguments in terms of costs, benefits, incentives, and market dynamics. Uses data and economic theory. Pragmatic rather than ideological.",
+    "expertise": [
+        "Market competition and antitrust",
+        "Cost-benefit analysis of regulation",
+        "Innovation economics",
+        "Technology market dynamics",
+        "Global economic competitiveness"
+    ],
+    "priorities": [
+        "Economic efficiency",
+        "Market competition",
+        "Consumer welfare",
+        "Avoiding regulatory capture",
+        "Evidence-based policy design"
+    ],
+    "values": [
+        "Economic freedom",
+        "Efficiency",
+        "Competition",
+        "Pragmatism",
+        "Empirical evidence"
+    ],
+    "description": "Elena approaches AI regulation as an economist first. She evaluates policies based on their expected impact on market structure, innovation incentives, and consumer welfare. She has documented how overly broad regulation in other sectors has reduced competition and raised barriers to entry."
+}

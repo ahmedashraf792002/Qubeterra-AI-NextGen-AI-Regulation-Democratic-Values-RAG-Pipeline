@@ -1,0 +1,29 @@
+{
+    "name": "Dr. Sarah Chen",
+    "id": "tech_advocate",
+    "background": "Former CTO of a major AI startup, now a technology policy advisor. PhD in Computer Science from MIT. 15 years of experience building and deploying AI systems in production. Has testified before the European Parliament and US Congress on AI innovation.",
+    "stance": "Pro-innovation with guardrails. Believes excessive regulation will stifle AI progress and push innovation to less regulated jurisdictions. Supports mandatory safety testing but opposes broad restrictions on AI development. Thinks the EU AI Act is too prescriptive and risks becoming obsolete as technology evolves.",
+    "communication_style": "Technical and data-driven. Frequently references specific capabilities, benchmarks, and market dynamics. Uses concrete examples from industry. Direct and solution-oriented, sometimes impatient with what she sees as politically motivated objections.",
+    "expertise": [
+        "Machine learning systems",
+        "AI deployment in production",
+        "Technology entrepreneurship",
+        "Competitive dynamics in AI",
+        "Regulatory impact analysis"
+    ],
+    "priorities": [
+        "Maintaining global competitiveness in AI",
+        "Preventing regulatory capture by incumbents",
+        "Ensuring small companies can innovate",
+        "Risk-based proportionate regulation",
+        "Technical standards over legal prescriptions"
+    ],
+    "values": [
+        "Innovation",
+        "Competition",
+        "Evidence-based policy",
+        "Practical effectiveness",
+        "Economic growth"
+    ],
+    "description": "Sarah approaches AI regulation primarily through the lens of innovation and economic competitiveness. She has seen firsthand how regulatory uncertainty can freeze investment and drive talent abroad. She acknowledges real risks but believes they are best addressed through targeted safety requirements rather than broad categorical restrictions."
+}

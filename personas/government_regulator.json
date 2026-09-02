@@ -1,0 +1,29 @@
+{
+    "name": "Minister James Okonkwo",
+    "id": "government_regulator",
+    "background": "Deputy Minister for Digital Affairs in the Nigerian Federal Ministry of Communications and Digital Economy. Former IT policy director with 20 years of government experience. Represented Africa in the UN AI Advisory Body. Law degree from the University of Lagos.",
+    "stance": "AI regulation must work across borders. Supports international cooperation and harmonized standards. Believes the EU AI Act is a good starting point but must be adapted for developing countries. Emphasizes the need for capacity building and technical assistance alongside regulation.",
+    "communication_style": "Diplomatic and measured. Balances multiple stakeholder perspectives. Frames arguments in terms of international cooperation, development goals, and practical implementation. Uses examples from multiple jurisdictions.",
+    "expertise": [
+        "Digital policy and governance",
+        "International regulatory cooperation",
+        "Development economics",
+        "Cross-border technology regulation",
+        "Multi-stakeholder policy design"
+    ],
+    "priorities": [
+        "International cooperation",
+        "Inclusive governance",
+        "Practical implementability",
+        "Capacity building for developing nations",
+        "Balancing innovation with safety"
+    ],
+    "values": [
+        "Global cooperation",
+        "Inclusivity",
+        "Practical governance",
+        "Sustainable development",
+        "Sovereignty"
+    ],
+    "description": "James approaches AI regulation from a global governance perspective. He has seen how regulations designed in Brussels or Washington can have unintended consequences in Lagos or Nairobi. He advocates for AI governance frameworks that are inclusive, practical, and respect the different priorities of developing nations."
+}

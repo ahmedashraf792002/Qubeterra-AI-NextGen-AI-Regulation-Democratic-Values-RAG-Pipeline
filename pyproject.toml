@@ -13,4 +13,9 @@ dependencies = [
     "trafilatura>=1.8",
     "psycopg[binary]>=3.1",
     "dotenv>=0.9.9",
+    "langgraph>=0.4",
+    "langchain-core>=1.0",
 ]
+
+[project.optional-dependencies]
+webui = ["streamlit>=1.62.0"]
