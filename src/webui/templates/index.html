@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubeterra AI NextGen</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>Qubeterra AI NextGen</h1>
+    <p>AI Regulations & Democratic Values — RAG + Agent Framework</p>
+</div>
+
+<!-- Provider Bar -->
+<div class="provider-bar">
+    <span class="label">LLM Provider:</span>
+    <div id="providers" class="providers"></div>
+</div>
+
+<!-- Tabs -->
+<div class="tabs">
+    <button class="tab active" onclick="showTab('week1', this)">Week 1 — Pipeline</button>
+    <button class="tab" onclick="showTab('week2', this)">Week 2 — Agents</button>
+</div>
+
+<!-- Content -->
+<div class="content">
+
+    <!-- Week 1 -->
+    <div id="week1" class="tab-content">
+        <div class="grid">
+
+            <!-- Pipeline -->
+            <div class="card">
+                <h2>Run Pipeline Steps</h2>
+                <div class="checkboxes">
+                    <label><input type="checkbox" value="1" class="step-cb"> 1. Collection</label>
+                    <label><input type="checkbox" value="2" class="step-cb"> 2. Preprocessing</label>
+                    <label><input type="checkbox" value="3" class="step-cb"> 3. Chunking</label>
+                    <label><input type="checkbox" value="4" class="step-cb"> 4. Embeddings</label>
+                    <label><input type="checkbox" value="5" class="step-cb"> 5. Storage</label>
+                </div>
+                <button class="btn primary" onclick="runPipeline()">Run Selected</button>
+                <div id="pipeline-output" class="output"></div>
+            </div>
+
+            <!-- Search -->
+            <div class="card">
+                <h2>Search Knowledge Base</h2>
+                <input type="text" id="search-query" placeholder="What are the transparency obligations for AI systems?">
+                <div class="row">
+                    <select id="search-category">
+                        <option value="">All categories</option>
+                        <option value="official_eu">Official EU</option>
+                        <option value="official_us">Official US</option>
+                        <option value="academic">Academic</option>
+                    </select>
+                    <input type="number" id="search-topk" value="5" min="1" max="10" class="small">
+                    <button class="btn primary" onclick="searchKB()">Search</button>
+                </div>
+                <div id="search-results" class="output"></div>
+            </div>
+
+            <!-- Scrape -->
+            <div class="card full">
+                <h2>Scrape Documents</h2>
+                <div class="grid-2">
+                    <div>
+                        <label>Scrape by URL</label>
+                        <input type="text" id="scrape-url" placeholder="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">
+                        <button class="btn secondary" onclick="scrapeURL()">Scrape URL</button>
+                    </div>
+                    <div>
+                        <label>Search & Scrape by Text Query</label>
+                        <input type="text" id="scrape-query" placeholder="EU AI Act high-risk requirements">
+                        <button class="btn secondary" onclick="scrapeQuery()">Search & Scrape</button>
+                    </div>
+                </div>
+                <div id="scrape-output" class="output"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Week 2 -->
+    <div id="week2" class="tab-content hidden">
+        <div class="grid">
+
+            <!-- Opinions -->
+            <div class="card">
+                <h2>Generate Opinions</h2>
+                <label>Topic</label>
+                <input type="text" id="opinion-topic" value="Should the EU AI Act impose strict penalties for high-risk AI violations?">
+                <label>Select Agents</label>
+                <div id="persona-checkboxes" class="checkboxes"></div>
+                <button class="btn primary" onclick="generateOpinions()">Generate Opinions</button>
+                <div id="opinions-output" class="output"></div>
+            </div>
+
+            <!-- Chat -->
+            <div class="card">
+                <h2>Chat with Agent</h2>
+                <select id="chat-persona"></select>
+                <div id="chat-history" class="chat-box"></div>
+                <div class="row">
+                    <input type="text" id="chat-input" placeholder="Type a message..." onkeydown="if(event.key==='Enter')sendChat()">
+                    <button class="btn primary" onclick="sendChat()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
